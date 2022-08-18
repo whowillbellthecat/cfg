@@ -1,7 +1,7 @@
 {
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-22.05";
-    nixpkgs_head = "nixpkgs";
+    nixpkgs_head.url = "nixpkgs";
     myConfig.url = "git+file:///data/src/config.git";
     impermanence = {
       type = "github";
