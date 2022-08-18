@@ -59,7 +59,7 @@
     mupdf
     dig
     gnupg
-    inputs.nixpkgs_head.pkgs.nyxt
+    inputs.nixpkgs_head.legacyPackages.x86_64-linux.nyxt
     pinentry
     xclip
     tmux
