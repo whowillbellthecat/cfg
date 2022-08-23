@@ -28,6 +28,8 @@
   services.xserver.xkbOptions = "caps:escape";
   services.xserver.libinput.enable = true;  # touchpad support
 
+  services.usbmuxd.enable = true;
+
   sound.enable = true;
   hardware.pulseaudio.enable = true;
 
