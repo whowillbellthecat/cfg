@@ -64,6 +64,7 @@
     xclip
     tmux
     surf
+    libimobiledevice
     inputs.myConfig.packages.x86_64-linux.emacsConfig
     (import ./emacs.nix { inherit pkgs; })
   ];
