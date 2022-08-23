@@ -65,6 +65,7 @@
     tmux
     surf
     libimobiledevice
+    ifuse # uses libimobiledevice
     inputs.myConfig.packages.x86_64-linux.emacsConfig
     (import ./emacs.nix { inherit pkgs; })
   ];
