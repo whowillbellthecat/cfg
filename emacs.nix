@@ -7,4 +7,5 @@ in
   emacsWithPackages (epkgs: (with epkgs.melpaStablePackages; [
     evil
     nix-mode
+    zenburn-theme
   ]))
