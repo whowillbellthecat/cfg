@@ -58,6 +58,7 @@
     st
     dmenu
     firefox
+    nsxiv
     mupdf
     dig
     gnupg
