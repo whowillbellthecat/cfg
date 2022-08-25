@@ -68,6 +68,7 @@
     xclip
     tmux
     surf
+    unzip
     libimobiledevice
     ifuse # uses libimobiledevice
     inputs.myConfig.packages.x86_64-linux.emacsConfig
