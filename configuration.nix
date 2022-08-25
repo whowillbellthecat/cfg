@@ -75,6 +75,7 @@
     (import ./emacs.nix { inherit pkgs; })
   ];
   programs.git.enable = true;
+  programs.git.config = { user = { email = "everythingisbotnet@protonmail.com"; name = "Christopher Arnold"; }; };
 
   # is there a better way to set this (e.g., via readline)
   programs.bash.interactiveShellInit = ''
