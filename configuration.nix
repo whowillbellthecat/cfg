@@ -36,7 +36,7 @@
   users.mutableUsers = false;
   users.users.satori = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ];
+    extraGroups = [ "wheel" "audio" ];
     home = "/home/satori";
     passwordFile = "/data/satori.passwd";
   };
