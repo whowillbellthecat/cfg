@@ -70,6 +70,7 @@
     surf
     unzip
     yt-dlp
+    rustc
     libimobiledevice
     ifuse # uses libimobiledevice
     inputs.myConfig.packages.x86_64-linux.emacsConfig
