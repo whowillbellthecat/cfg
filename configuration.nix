@@ -72,6 +72,8 @@
     yt-dlp
     rustc
     cargo
+    rustfmt
+    acpi
     libimobiledevice
     ifuse # uses libimobiledevice
     inputs.myConfig.packages.x86_64-linux.emacsConfig
