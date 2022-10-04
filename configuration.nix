@@ -52,6 +52,8 @@
 
   environment.variables = { EDITOR = "vim"; };
 
+  documentation.man.generateCaches = true;
+
   environment.systemPackages = with pkgs; [
     vim
     wget
