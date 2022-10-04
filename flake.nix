@@ -10,11 +10,17 @@
     };
   };
 
-  outputs = { self, nixpkgs, impermanence, ...}@inputs: {
+  outputs = {
+    self,
+    nixpkgs,
+    impermanence,
+    ...
+  } @ inputs: {
+    formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.alejandra;
     nixosConfigurations.sotto-voce = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs.inputs = inputs;
-      modules = [ ./configuration.nix impermanence.nixosModule ];
+      modules = [./configuration.nix impermanence.nixosModule];
     };
   };
 }

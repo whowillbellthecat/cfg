@@ -1,6 +1,4 @@
-{ pkgs ? import <nixpkgs> {} }:
-
-let
+{pkgs ? import <nixpkgs> {}}: let
   myEmacs = pkgs.emacs;
   emacsWithPackages = (pkgs.emacsPackagesFor myEmacs).emacsWithPackages;
 in
