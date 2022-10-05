@@ -58,6 +58,7 @@
   documentation.man.generateCaches = true;
 
   environment.systemPackages = with pkgs; [
+    tetex
     vim
     wget
     st
