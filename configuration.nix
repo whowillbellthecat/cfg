@@ -34,7 +34,6 @@
   services.usbmuxd.enable = true;
 
   sound.enable = true;
-  hardware.pulseaudio.enable = true;
 
   users.mutableUsers = false;
   users.users.satori = {
