@@ -76,6 +76,10 @@
     unzip
     yt-dlp
     rustc
+    rust-analyzer
+    inputs.nixpkgs_head.legacyPackages.x86_64-linux.helex
+    idris2
+    coq
     cargo
     rustfmt
     acpi
