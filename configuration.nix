@@ -77,6 +77,7 @@
     yt-dlp
     rustc
     rust-analyzer
+    clippy
     inputs.nixpkgs_head.legacyPackages.x86_64-linux.helex
     idris2
     coq
