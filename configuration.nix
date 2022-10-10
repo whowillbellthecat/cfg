@@ -81,6 +81,7 @@
     rustc
     rust-analyzer
     clippy
+    qemu
     inputs.nixpkgs_head.legacyPackages.x86_64-linux.helex
     idris2
     coq
