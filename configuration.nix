@@ -82,7 +82,7 @@
     rust-analyzer
     clippy
     qemu
-    inputs.nixpkgs_head.legacyPackages.x86_64-linux.helex
+    inputs.nixpkgs_head.legacyPackages.x86_64-linux.helix
     idris2
     coq
     cargo
