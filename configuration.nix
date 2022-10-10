@@ -52,7 +52,10 @@
     };
   };
 
-  environment.variables = {EDITOR = "vim";};
+  environment.variables = {
+	EDITOR = "vim";
+	BROWSER = "surf";
+  };
 
   documentation.man.generateCaches = true;
 
