@@ -61,6 +61,7 @@
 
   environment.systemPackages = with pkgs; [
     tetex
+    perf-tools
     vim
     wget
     st
