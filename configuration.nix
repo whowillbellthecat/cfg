@@ -61,7 +61,7 @@
 
   environment.systemPackages = with pkgs; [
     tetex
-    perf-tools
+    linuxKernel.packages.linux_5_19.perf
     vim
     wget
     st
