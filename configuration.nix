@@ -62,7 +62,6 @@
   environment.systemPackages = with pkgs; [
     gh
     anki
-    tetex
     linuxKernel.packages.linux_5_19.perf
     vim
     wget
