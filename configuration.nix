@@ -48,7 +48,7 @@
 
   environment.persistence."/data" = {
     users.satori = {
-      directories = [".emacs.d" ".gnupg"]; # mount these read-only?
+      directories = [".emacs.d" ".gnupg" ".task"]; # mount some of these read-only?
     };
   };
 
