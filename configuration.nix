@@ -80,15 +80,11 @@
     surf
     unzip
     yt-dlp
-    rustc
     rust-analyzer
-    clippy
     qemu
     inputs.nixpkgs_head.legacyPackages.x86_64-linux.helix
-    idris2
     coq
     cargo
-    rustfmt
     acpi
     libimobiledevice
     ifuse # uses libimobiledevice
