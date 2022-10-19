@@ -18,16 +18,16 @@
   boot.loader.grub.zfsSupport = true;
   boot.loader.grub.extraPrepareConfig = ''
     mkdir -p /boot/efis
-    for i in /boot/efis/*; do mount $i ; done
+    for i in /boot/efis/*; do mount "$i" ; done
 
     mkdir -p /boot/efi
     mount /boot/efi
   '';
   boot.loader.grub.extraInstallCommands = ''
     ESP_MIRROR=$(mktemp -d)
-    cp -r /boot/efi/EFI $ESP_MIRROR
-    for i in /boot/efis/*; do cp -r $ESP_MIRROR/EFI $i ; done
-    rm -rf $ESP_MIRROR
+    cp -r /boot/efi/EFI "$ESP_MIRROR"
+    for i in /boot/efis/*; do cp -r "$ESP_MIRROR"/EFI "$i" ; done
+    rm -rf "$ESP_MIRROR"
   '';
   boot.loader.grub.devices = [
     "/dev/disk/by-id/nvme-SAMSUNG_MZVLB256HBHQ-000L7_S4ELNF3N570089"
