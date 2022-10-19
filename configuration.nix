@@ -61,6 +61,7 @@
 
   environment.systemPackages = with pkgs; [
     gh
+    taskwarrior
     anki
     linuxKernel.packages.linux_5_19.perf
     vim
