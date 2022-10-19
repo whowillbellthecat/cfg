@@ -60,6 +60,7 @@
   documentation.man.generateCaches = true;
 
   environment.systemPackages = with pkgs; [
+    anki
     tetex
     linuxKernel.packages.linux_5_19.perf
     vim
