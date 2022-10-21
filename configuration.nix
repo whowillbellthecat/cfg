@@ -81,6 +81,7 @@
     surf
     unzip
     yt-dlp
+    rustc
     rust-analyzer
     qemu
     inputs.nixpkgs_head.legacyPackages.x86_64-linux.helix
