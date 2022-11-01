@@ -2,7 +2,6 @@
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-22.05";
     nixpkgs_head.url = "nixpkgs";
-    myConfig.url = "git+file:///data/src/config.git";
     impermanence = {
       type = "github";
       owner = "nix-community";
@@ -13,8 +12,8 @@
   outputs = {
     self,
     nixpkgs,
+    nixpkgs_head,
     impermanence,
-    ...
   } @ inputs: {
     formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.alejandra;
     nixosConfigurations.sotto-voce = nixpkgs.lib.nixosSystem {
