@@ -60,6 +60,8 @@
   documentation.man.generateCaches = true;
 
   environment.systemPackages = with pkgs; [
+    sqlite
+    rlwrap
     gh
     taskwarrior
     anki
