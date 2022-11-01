@@ -16,6 +16,10 @@
   boot.loader.grub.copyKernels = true;
   boot.loader.grub.efiSupport = true;
   boot.loader.grub.zfsSupport = true;
+
+## This code is from https://openzfs.github.io/openzfs-docs/Getting%20Started/NixOS/Root%20on%20ZFS/3-system-configuration.html
+## However, it has issues. Notably, it adds a new set of mounts every run until a limit is hit and errors occur
+## FIXME: investigate the intentions behind this and/or rewrite it to fix these errors.
   boot.loader.grub.extraPrepareConfig = ''
     mkdir -p /boot/efis
     for i in /boot/efis/*; do mount "$i" ; done
