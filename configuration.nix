@@ -65,6 +65,7 @@
     gh
     taskwarrior
     anki
+    tetex # required by anki to support [latex] in cards
     linuxKernel.packages.linux_5_19.perf
     vim
     wget
