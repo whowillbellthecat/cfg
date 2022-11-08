@@ -67,7 +67,15 @@
     anki
     tetex # required by anki to support [latex] in cards
     linuxKernel.packages.linux_5_19.perf
-    vim
+    (vim_configurable.customize {
+      name = "vim";
+      vimrcConfig.customRC = ''
+        autocmd FileType v :packadd Coqtail
+      '';
+      vimrcConfig.packages.pkg = with pkgs.vimPlugins; {
+        opt = [Coqtail];
+      };
+    })
     wget
     st
     dmenu
