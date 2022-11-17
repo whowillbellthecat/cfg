@@ -60,7 +60,6 @@
   documentation.man.generateCaches = true;
 
   environment.systemPackages = with pkgs; [
-    sqlite
     rlwrap
     gh
     taskwarrior
@@ -86,6 +85,7 @@
     dig
     gnupg
     inputs.nixpkgs_head.legacyPackages.x86_64-linux.nyxt
+    inputs.nixpkgs_head.legacyPackages.x86_64-linux.sqlite
     pinentry
     xclip
     tmux
