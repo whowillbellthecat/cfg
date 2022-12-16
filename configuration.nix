@@ -16,6 +16,7 @@
   networking.nameservers = ["1.1.1.1"];
 
   time.timeZone = "America/Chicago";
+  virtualization.docker.enable = true;
 
   # Select internationalisation properties.
   #i18n.defaultLocale = "en_US.UTF-8";
