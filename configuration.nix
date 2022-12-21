@@ -49,13 +49,12 @@
 
   environment.persistence."/data" = {
     users.satori = {
-      directories = [".emacs.d" ".gnupg" ".task"]; # mount some of these read-only?
+      directories = [".emacs.d" ".gnupg" ".task" ".timewarrior"]; # mount some of these read-only?
     };
   };
 
   environment.variables = {
     EDITOR = "vim";
-    BROWSER = "surf";
   };
 
   documentation.man.generateCaches = true;
@@ -64,6 +63,7 @@
     rlwrap
     gh
     taskwarrior
+    timewarrior
     anki
     tetex # required by anki to support [latex] in cards
     # linuxKernel.packages.linux_5_19.perf
