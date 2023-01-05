@@ -85,7 +85,6 @@
     mupdf
     dig
     gnupg
-    inputs.nixpkgs_head.legacyPackages.x86_64-linux.nyxt
     inputs.nixpkgs_head.legacyPackages.x86_64-linux.sqlite
     pinentry
     xclip
@@ -96,7 +95,6 @@
     rustc
     rust-analyzer
     qemu
-    inputs.nixpkgs_head.legacyPackages.x86_64-linux.helix
     coq
     cargo
     acpi
