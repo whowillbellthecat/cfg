@@ -71,6 +71,7 @@
       name = "vim";
       vimrcConfig.customRC = ''
         autocmd FileType v :packadd Coqtail
+        syntax enable
       '';
       vimrcConfig.packages.pkg = with pkgs.vimPlugins; {
         opt = [Coqtail];
