@@ -16,7 +16,7 @@
   networking.nameservers = ["1.1.1.1"];
 
   time.timeZone = "America/Chicago";
-  virtualisation.docker.enable = true;
+  virtualisation.docker.rootless.enable = true;
 
   # Select internationalisation properties.
   #i18n.defaultLocale = "en_US.UTF-8";
@@ -112,6 +112,7 @@
 
   # is there a better way to set this (e.g., via readline)
   programs.bash.interactiveShellInit = ''
+    export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
     set -o vi
   '';
 
