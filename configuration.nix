@@ -17,6 +17,7 @@
 
   time.timeZone = "America/Chicago";
   virtualisation.docker.rootless.enable = true;
+  systemd.services."user@".serviceConfig = {Delegate = "yes";};
 
   # Select internationalisation properties.
   #i18n.defaultLocale = "en_US.UTF-8";
