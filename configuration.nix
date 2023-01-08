@@ -69,15 +69,8 @@
     customPaneNavigationAndResize = true;
   };
 
-  environment.systemPackages = with pkgs; [
-    rlwrap
-    gh
-    taskwarrior
-    timewarrior
-    anki
-    tetex # required by anki to support [latex] in cards
-    # linuxKernel.packages.linux_5_19.perf
-    (vim_configurable.customize {
+  programs.vim = {
+    package = pkgs.vim_configurable.customize {
       name = "vim";
       vimrcConfig.customRC = ''
         autocmd FileType v :packadd Coqtail
@@ -86,7 +79,18 @@
       vimrcConfig.packages.pkg = with pkgs.vimPlugins; {
         opt = [Coqtail];
       };
-    })
+    };
+    defaultEditor = true;
+  };
+
+  environment.systemPackages = with pkgs; [
+    rlwrap
+    gh
+    taskwarrior
+    timewarrior
+    anki
+    tetex # required by anki to support [latex] in cards
+    # linuxKernel.packages.linux_5_19.perf
     wget
     st
     dmenu
