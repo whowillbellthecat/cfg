@@ -60,6 +60,12 @@
 
   documentation.man.generateCaches = true;
 
+  programs.tmux = {
+    enable = true;
+    keyMode = "vi";
+    customPaneNavigationAndResize = true;
+  };
+
   environment.systemPackages = with pkgs; [
     rlwrap
     gh
@@ -90,7 +96,6 @@
     inputs.nixpkgs_head.legacyPackages.x86_64-linux.sqlite
     pinentry
     xclip
-    tmux
     surf
     unzip
     yt-dlp
